@@ -1,0 +1,24 @@
+{
+  "name": "dsh-mobile-responsive",
+  "version": "0.1.0",
+  "description": "Mobile-responsive layout layer for the dsh web GUI (client plugin)",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": {
+      "default": "./lib/client.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "client": {
+      "platform": "web",
+      "inject": [],
+      "immediately": true
+    }
+  },
+  "license": "MIT"
+}
