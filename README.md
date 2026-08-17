@@ -10,6 +10,7 @@ The built-in three-column shell (`@deepseek-ai/dsh-client-ui-layout`) is already
 |---|---|
 | Expanding the sidebar squishes the conversation to ~110px | The sidebar becomes an overlay drawer (`min(85vw, 340px)`, shadowed, above the full-width conversation) |
 | The session stats strip truncates (`white-space: nowrap; overflow: hidden`) | The strip wraps onto multiple lines |
+| The composer's model selector overlaps the workspace picker on narrow screens | Below 460px the model label truncates with ellipsis and clears the workspace control |
 | The composer sits flush against the bottom edge on notched phones | `env(safe-area-inset-bottom)` padding |
 
 ## How it works
