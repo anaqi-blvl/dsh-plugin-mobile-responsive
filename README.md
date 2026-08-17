@@ -27,7 +27,7 @@ dsh plugin --profile web add dsh-mobile-responsive
 or install from this repository:
 
 ```sh
-dsh plugin --profile web add git+ssh://git@github.com/anaqi-blvl/deepseek-plugin-mobile-responsive.git
+dsh plugin --profile web add git+ssh://git@github.com/anaqi-blvl/dsh-plugin-mobile-responsive.git
 ```
 
 Then register the plugin in the browser roster — add to your profile's `cordis.patch.yml`:

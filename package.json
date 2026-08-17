@@ -2,6 +2,10 @@
   "name": "dsh-mobile-responsive",
   "version": "0.1.0",
   "description": "Mobile-responsive layout layer for the dsh web GUI (client plugin)",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/anaqi-blvl/dsh-plugin-mobile-responsive.git"
+  },
   "type": "module",
   "main": "lib/index.js",
   "exports": {
