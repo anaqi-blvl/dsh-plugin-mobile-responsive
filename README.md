@@ -12,6 +12,11 @@ The built-in three-column shell (`@deepseek-ai/dsh-client-ui-layout`) is already
 | The session stats strip truncates (`white-space: nowrap; overflow: hidden`) | On phones the strip is collapsed to a single line by default — tap it (or Enter) to expand the full stats |
 | The composer's model selector overlaps the workspace picker on narrow screens | Below 460px the model label truncates with ellipsis and clears the workspace control |
 | The whole page scrolls instead of just the chat (iOS URL-bar resize, rubber-band, pull-to-refresh) | On touch devices the page is pinned (`overflow: hidden`, `100dvh`, `overscroll-behavior: none`) — only the chat area scrolls |
+| The composer scrolls away with the chat on iOS | Sticky ancestors switch to `overflow: clip` so WebKit keeps the composer pinned |
+| The sidebar drawer leaves a dead gap next to its contents | The sidebar content stretches to fill the drawer |
+| Picking a chat from the drawer needs extra taps | Tapping a chat auto-collapses the drawer and lands straight in the chat |
+| The settings modal is unusable on phones (188px nav crushes content) | On phones the modal goes full-screen with a horizontal tab strip |
+| The question dialog CTA rows overflow | Footer/action rows wrap and share the width |
 | The composer sits flush against the bottom edge on notched phones | `env(safe-area-inset-bottom)` padding |
 
 ## How it works
