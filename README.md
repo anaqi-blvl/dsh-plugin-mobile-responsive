@@ -13,9 +13,11 @@ The built-in three-column shell (`@deepseek-ai/dsh-client-ui-layout`) is already
 | The composer's model selector overlaps the workspace picker on narrow screens | Below 460px the model label truncates with ellipsis and clears the workspace control |
 | The whole page scrolls instead of just the chat (iOS URL-bar resize, rubber-band, pull-to-refresh) | On touch devices the page is pinned (`overflow: hidden`, `100dvh`, `overscroll-behavior: none`) — only the chat area scrolls |
 | The composer scrolls away with the chat on iOS | Sticky ancestors switch to `overflow: clip` so WebKit keeps the composer pinned |
-| The sidebar drawer leaves a dead gap next to its contents | The sidebar content stretches to fill the drawer |
+| The sidebar drawer leaves a dead gap next to its contents | The sidebar content stretches to fill the drawer; the drawer is full-width on phones |
 | Picking a chat from the drawer needs extra taps / the first tap gets swallowed | iOS hover emulation (row action swap + HoverCard preview bubble) is neutralized on touch, so one tap selects; the drawer then auto-collapses (delayed until the switch settles) |
-| The settings modal is unusable on phones (188px nav crushes content) | On phones the modal goes full-screen with a horizontal tab strip |
+| Chat rows are tiny tap targets / search from the rail doesn't open | Rows are 44px tall; the search bar is forced expanded whenever the drawer is open |
+| Switching chats pops the keyboard open | The composer is blurred after a switch so the keyboard stays closed |
+| The settings modal is unusable on phones (188px nav crushes content) | On phones the modal is full-screen, nav sections are full-width rows, and the close button floats above the options |
 | The question dialog CTA rows overflow | Footer/action rows wrap and share the width |
 | The composer sits flush against the bottom edge on notched phones | `env(safe-area-inset-bottom)` padding |
 
